@@ -2,14 +2,16 @@ package main
 
 import (
 	//"AOC/solutions2022"
-	"AOC/solutions2023"
+	//"AOC/solutions2023"
+
+	"AOC/solutions2025"
 	"bufio"
 	"fmt"
 	"os"
 )
 
 func main() {
-	file, err := os.Open("/Users/cameron.bedard/Documents/FunRepos/AdventOfCode2022/inputs2023/day25.txt")
+	file, err := os.Open("/home/cameron/Documents/AdventOfCode/input/day2.txt")
 	if err != nil {
 		fmt.Println("Error opening file:", err)
 		return
@@ -23,5 +25,5 @@ func main() {
 		lines = append(lines, scanner.Text())
 	}
 
-	solutions2023.Day25p1(lines)
+	solutions2025.Day2Part1(lines)
 }
