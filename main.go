@@ -25,5 +25,5 @@ func main() {
 		lines = append(lines, scanner.Text())
 	}
 
-	solutions2025.Day2Part1(lines)
+	solutions2025.Day2Part2(lines)
 }
