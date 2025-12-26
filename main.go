@@ -11,7 +11,7 @@ import (
 )
 
 func main() {
-	file, err := os.Open("/home/cameron/Documents/AdventOfCode/input/day6.txt")
+	file, err := os.Open("/home/cameron/Documents/AdventOfCode/input/day7.txt")
 	if err != nil {
 		fmt.Println("Error opening file:", err)
 		return
@@ -25,5 +25,5 @@ func main() {
 		lines = append(lines, scanner.Text())
 	}
 
-	solutions2025.Day6Part2(lines)
+	solutions2025.Day7Part2(lines)
 }
