@@ -8,10 +8,11 @@ import (
 	"bufio"
 	"fmt"
 	"os"
+	"time"
 )
 
 func main() {
-	file, err := os.Open("/home/cameron/Documents/AdventOfCode/input/day8.txt")
+	file, err := os.Open("/home/cameron/Documents/AdventOfCode/input/day9.txt")
 	if err != nil {
 		fmt.Println("Error opening file:", err)
 		return
@@ -25,5 +26,7 @@ func main() {
 		lines = append(lines, scanner.Text())
 	}
 
-	solutions2025.Day8Part2(lines)
+	start := time.Now()
+	solutions2025.Day9Part2(lines)
+	fmt.Println("Wall time:", time.Since(start))
 }
