@@ -12,7 +12,7 @@ import (
 )
 
 func main() {
-	file, err := os.Open("/home/cameron/Documents/AdventOfCode/input/day10.txt")
+	file, err := os.Open("/home/cameron/Documents/AdventOfCode/input/day11.txt")
 	if err != nil {
 		fmt.Println("Error opening file:", err)
 		return
@@ -27,6 +27,6 @@ func main() {
 	}
 
 	start := time.Now()
-	solutions2025.Day10Part2(lines)
+	solutions2025.Day11Part2(lines)
 	fmt.Println("Wall time:", time.Since(start))
 }
